@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-heading">Introduction</h1>
+
+  <p>The Linux-based indiviual photobooth (Libipho) project enables you to build your own photobooth from scratch. To this end, we give detailed instructions in both
+  <a href="{{ "/hardware" | prepend: site.baseurl }}">hardware</a>
+  and
+  <a href="{{ "/software" | prepend: site.baseurl }}">software</a>
+  setup. In particular, we provide an open source implementation of a sophisticated photobooth software hosted in github repositories (licensed under GPLv2). The software is designed with the goal of a highly efficient, zero maintenance operation mode.</p>
+
+<p>Libipho features a photobooth containing</p>
+
+<ul>
+<li>A DSLR camera with a prime lense for optimal picture quality</li>
+<li>A 10 inch high resolution tablet that serves as a display for an awesome preview experience</li>
+<li>A WiFi router to enable your guests to view the up-to-date photo gallery on their smartphones or tablets</li>
+<li>An embedded platform (e.g., Beaglebone Black) running a custom <a href="https://www.yoctoproject.org/">yocto</a>-based Linux operating system that hosts the Libipho software</li>
+</ul>
+
+<p>The Libipho is triggered wirelessly using a remote control for the camera.</p>
+
+<p>In order to achieve high quality pictures, we suggest (and instruct you) to use a background canvas and an indirect flash (for example, a reflective umbrella or a large softbox). We usually use a white background canvas and flash it from behind in order to remove shadows and other imperfections of the canvas. </p>
+
+
+  <h1 class="page-heading">News</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
