@@ -4,6 +4,4 @@ title: Software
 permalink: /software/
 ---
 
-Libipho software
-
-TODO
+TODO: How the Libipho software works
