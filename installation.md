@@ -4,8 +4,6 @@ title: Installation
 permalink: /installation/
 ---
 
-TODO: image showing router, back end, and front end.
-
 In order to install and configure Libipho,
 you have to install and configure our
 three main building blocks: a Wi-Fi router, a
@@ -13,6 +11,8 @@ back end running on a miniaturized computer,
 and a frontend, running on a tablet computer.
 In the following, we describe the parts that you
 have to install.
+
+![m]({{ '/installation-components.png' | prepend: site.imgurl }})
 
 # Router Configuration
 
